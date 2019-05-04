@@ -6,9 +6,11 @@ FACEBOOK-FEED
 	@extend %text-center;
 }
 
-.fb-page {
-	width: 100%;
-	margin: em(40px) auto 0;
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+	max-width: em(500px);
 }
 
 

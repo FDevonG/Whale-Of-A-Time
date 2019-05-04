@@ -395,7 +395,8 @@ PLACEHOLDERS
   display: none; }
 
 /* line 14, ../scss/utilities/_placeholders.scss */
-.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .facebook, .main-footer {
+.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .facebook,
+.fb-page, .main-footer {
   text-align: center; }
 
 /* line 18, ../scss/utilities/_placeholders.scss */
@@ -1024,10 +1025,16 @@ GOOGLE-MAP
 /***************************
 FACEBOOK-FEED
 ***************************/
-/* line 9, ../scss/components/_facebook-feed.scss */
+/* line 10, ../scss/components/_facebook-feed.scss */
 .fb-page {
-  width: 100%;
   margin: 2.5em auto 0; }
+
+/* line 14, ../scss/components/_facebook-feed.scss */
+.fb-page,
+.fb-page span,
+.fb-page span iframe[style] {
+  width: 100% !important;
+  max-width: 31.25em; }
 
 /***************************
 FOOTER
