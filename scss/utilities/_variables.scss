@@ -1,0 +1,58 @@
+/***************************
+VARIBLES
+***************************/
+
+/*******
+LAYOUT
+*******/
+
+$max__page-width : 1200px;
+
+/*******
+FONT
+*******/
+
+$google__font-url : 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+$primary__font-family : 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans Serif';
+$secondary__font-family : 'Helvetica Neue', 'Helvetica', 'Arial', 'Sans Serif';
+$base__font-size : 16px;
+$light__font-weight : 300;
+$normal__font-weight : 400;
+$bold__font-weight : 700;
+
+/*******
+COLORS
+*******/
+$black : #061A26;
+$white : #fff;
+$veniceBlue : #07598C;
+$bondieBlue : #0395A5;
+$lightningYellow : #FAC917;
+$shuttleGrey : #606E7F;
+$shuttleGreyRGBA : rgba(96, 110, 127, 0.9);
+$parchment : #F2E5D5;
+
+$accent-color : $bondieBlue;
+$primary-color : $veniceBlue;
+$grey : $shuttleGrey;
+$background : $parchment;
+$greyTransparent : $shuttleGreyRGBA;
+
+/*******
+BORDER-RADIUS
+*******/
+$br : 5px;
+$br-round : 50%;
+
+/*******
+TRANSITION
+*******/
+$default__transition-time : 0.5s;
+
+/*******
+MEDIA-QUERIES
+*******/
+
+$small-break : 320px;
+$medium-break : 600px;
+$large-break : 900px;

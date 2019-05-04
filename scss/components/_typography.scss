@@ -1,0 +1,155 @@
+/***************************
+Typography
+***************************/
+
+@if variable-exists (google__font-url) {
+	@import url($google__font-url);
+}
+
+html {
+	font-family : $primary__font-family;
+	font-size : $base__font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	font-size: em(14px);
+}
+
+.center-text {
+	@extend %text-center;
+	margin: 0;
+	padding: 0;
+}
+
+/**********
+HEADER-TYPOGRAPHY
+**********/
+
+.main-header {
+	text-align: center;
+}
+
+/**********
+MAIN-NAV
+**********/
+
+.main-nav {
+	@include e (list) {
+		@include m(item) {
+			a {
+				font-size: em(16px);
+				color: $accent-color;
+				font-weight: $light__font-weight;
+				&:hover,
+				&:active,
+				&:focus {
+					color: $black;
+				}
+			}
+		}
+		
+	}
+}
+
+/**********
+MAIN-CONTENT-GENERAL
+**********/
+
+.section-heading {
+	color: $primary-color;
+	margin-top: em(80px);
+}
+
+/**********
+MODAL
+**********/
+
+.modal-close {
+	font-size: em(40px);
+	font-weight: $bold__font-weight;
+}
+
+.modal-text {
+	font-size: em(14px);
+}
+
+/**********
+REVIEWS
+**********/
+
+.reviews {
+	@include e(list) {
+		@include m(item) {
+			span:nth-child(3) {
+				font-style: italic;
+				font-size: $light__font-weight;
+				font-size: em(12px);
+			}
+			p {
+				font-size: em(12px);
+			}
+		}
+	}
+}
+
+/**********
+LOCAL ATTRACTIONS
+**********/
+
+.local-attraction-links-container,
+.local-event-link-container {
+	a,
+	span {
+		margin: em(5px) 0;
+		font-size: em(14px);
+	}
+	span {
+		color: $black;
+	}
+	a {
+		color: $accent-color;
+	}
+}
+
+/**********
+EMAIL-FORM
+**********/
+
+.email-form {
+	font-size: em(14px);
+}
+
+.email-response-div {
+	@extend %text-center;
+	font-size: em(14px);
+}
+
+/**********
+FOOTER
+**********/
+
+.footer-text {
+	font-size: em(14px);
+}
+
+.footer-tel {
+	color: $accent-color;
+}
+
+.site-author {
+	font-size: em(10px);
+	color: $black;
+}
+
+
+
+

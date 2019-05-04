@@ -1,0 +1,70 @@
+/***************************
+Main-Nav
+***************************/
+
+@mixin flexy ($dis:flex, $dir:null, $wrap:null, $just: null, $align : null) {
+	display:$dis;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+	align-items: $align;
+}
+
+@mixin flex($basis, $grow : 0, $shrink : 0,) {
+	flex-grow: $grow;
+	flex-shrink : $shrink;
+	flex-basis: $basis;
+}
+
+@mixin grid($dis : grid, $just : null, $align : null) {
+	display: $dis;
+	justify-content: $just;
+	align-content: $align;
+}
+
+//BEM Selectors
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+
+@mixin m ($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
+//Border
+@mixin border ($width, $color: $border-color, $style : solid, $side : null) {
+	@if ($side != null) {
+		border-#{$side} : $width $style $color;
+	} 
+	@else {
+		border : $width $style $color;
+	}
+}
+
+//Media querie
+@mixin mq($break) {
+	@if ($break == "small") {
+		@media (min-width : $small-break) and (max-width : $medium-break) {
+			@content;
+		}
+	} 
+	@else if($break == "medium") {
+		@media (min-width : $medium-break + 1) {
+			@content;
+		}
+	}
+	@else if ($break == "large") {
+		@media (min-width : $large-break) {
+			@content;
+		}
+	}
+	@else {
+		@error "No value could be found for $break";
+	}
+}
+
+

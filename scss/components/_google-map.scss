@@ -1,0 +1,9 @@
+/***************************
+GOOGLE-MAP
+***************************/
+
+.google-map {
+	width: 100%;
+	height: em(500px);
+	@include border($width : em(1px), $color : $accent-color);
+}

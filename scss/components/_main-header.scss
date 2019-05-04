@@ -1,0 +1,21 @@
+/***************************
+MAIN-HEADER
+***************************/
+
+.site-heading {
+	margin: 0;
+	max-height: 623px;
+	width: 100%;
+	a {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		display: block;
+		img {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			max-height: 623px;
+		}
+	}
+}

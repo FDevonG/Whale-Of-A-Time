@@ -1,0 +1,44 @@
+/***************************
+REVIEWS
+***************************/
+
+.reviews {
+	@include e(list) {
+		padding-left: 0;
+		@include mq(medium) {
+			@include grid();
+			grid-template-columns: repeat(2, 40%);
+			grid-column-gap: 10%;
+		}
+		@include m(item) {
+			padding: em(15px) 0;
+			margin: em(10px) auto;
+		}
+	}
+}
+
+.review-stars {
+	width: em(200px);
+	margin: 0 auto;
+	@include e(list) {
+		padding-left: 0;
+		@include grid();
+		grid-template-columns: repeat(5, minMax(20%, 1fr));
+		@extend %text-center;
+	}
+}
+
+.review-star {
+	width: em(20px);
+	height: em(20px);
+}
+
+.review-star-good {
+	fill: $lightningYellow;
+	filter: drop-shadow(em(2px) em(2px) em(0.5px) $grey);
+}
+
+.review-star-bad {
+	fill: $grey;
+}
+

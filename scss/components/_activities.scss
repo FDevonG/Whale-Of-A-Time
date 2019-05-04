@@ -1,0 +1,31 @@
+/***************************
+LOCAL ATTRACTIONS
+***************************/
+
+.local-attractions {
+	@include e(list) {
+		@include mq(medium) {
+			@include grid();
+			grid-template-columns: repeat(2, 47.5%);
+			grid-column-gap: 5%;
+		}
+		@include m(item) {
+			@extend %text-center;
+			margin: em(80px) 0;
+		}
+	}
+}
+
+.local-attraction-links-container,
+.local-event-link-container {
+	margin-top: em(15px);
+	@include grid();
+}
+
+.local-event-link-container {
+	margin-top: em(80px);
+	@include grid();
+	@extend %text-center;
+}
+
+

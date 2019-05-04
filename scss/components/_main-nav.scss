@@ -1,0 +1,43 @@
+/***************************
+Main-Nav
+***************************/
+
+.main-nav {
+	@extend %hidden;
+	@include mq(medium) {
+		display:block;
+	}
+	@include e (list) {
+		
+		display:grid;
+		grid-template-columns: repeat(4, minMax(20%, 1fr));
+		padding-left:0;
+		margin: 0;
+		background-color: $background;
+		z-index: 1000;
+		@include border($width: 1px, $color : $accent-color, $side : top);
+		
+		@include m(item) {
+			@include border($width: 1px, $color : $accent-color, $side : right);
+			@include border($width: 1px, $color : $accent-color, $side : bottom);
+			@include border($width: 1px, $color : $accent-color, $side : left);
+			border-radius : 0 0 $br $br;
+			padding: em(5px);
+			margin: 0 em(5px);
+			a {
+				display:block;
+			}
+			transition: box-shadow $default__transition-time;
+			&:hover,
+			&:active,
+			&:focus {
+				box-shadow: em(5px) em(5px) em(2px) $grey;
+			}
+		}
+		
+	}
+}
+
+.current-page {
+	box-shadow: em(5px) em(5px) em(2px) $grey;
+}

@@ -1,0 +1,62 @@
+/***************************
+MOBILE-NAV
+***************************/
+
+.mobile-nav {
+	
+	@include mq(medium) {
+		display: none;
+	}
+	
+	overflow: hidden;
+	
+	background-color: $parchment;
+	
+	@include border($width : em(1px), $color : $accent-color, $side : 'top');
+	@include e (list) {
+		display: grid;
+		grid-template-columns: repeat(4, minMax(15%, 1fr));
+		margin: 0;
+		padding: 0;
+		@include m(item) {
+			margin: 0;
+			padding: 0;
+			fill: $accent-color;
+			transition: fill $default__transition-time;
+			@extend %pointer;
+			&:hover,
+			&:focus {
+				svg {
+					fill: $black;
+				}
+				@include border($width : em(1px), $color : $black, $side : 'bottom');
+			}
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}
+
+.nav-icon {
+	max-width: em(25px);
+	margin: em(10px) 0;
+	@extend %icon;
+}
+
+.current-page-icon {
+	fill: $black;
+	@include border($width : em(1px), $color : $black, $side : 'bottom');
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  	position: fixed;
+  	top: 0;
+	width:90%;
+	max-width: $max__page-width;
+	z-index: 100;
+	border-top: none;
+}

@@ -1,0 +1,30 @@
+/***************************
+PLACEHOLDERS
+***************************/
+
+%pointer {
+	cursor: pointer;
+}
+
+%hidden {
+	display:none;
+}
+
+//center text
+%text-center {
+	text-align: center;
+}
+
+%icon {
+	fill: $accent-color;
+	transition: fill $default__transition-time;
+	@extend %pointer;
+	&:hover,
+	&:focus {
+		fill: $black;
+	}
+}
+
+
+
+

@@ -1,0 +1,42 @@
+/***************************
+SERVICES
+***************************/
+
+.feature-service-img,
+.feature-service-img-nonclickable {
+	width: 100%;
+	max-width: 400px;
+	border-radius: $br;
+	margin: em(40px) auto;
+	@include border($width : em(3px), $color : $accent-color);
+	@include mq(medium) {
+		
+	}
+}
+
+.feature-service-img {
+	cursor: pointer;
+}
+
+.service-img {
+	width: 20%;
+	max-width: em(100px);
+	margin: em(5px);
+	@extend %pointer;
+	border-radius: $br;
+	display: inline-block;
+	transition: filter $default__transition-time, transform $default__transition-time;
+	&:hover {
+		filter: drop-shadow(em(5px) em(5px) em(2px) $grey);
+		transform: scale(1.1);
+	} 
+}
+
+.service-image-conatiner {
+	@extend %text-center;
+}
+
+
+
+
+
