@@ -8,7 +8,7 @@ SERVICES
 	max-width: 400px;
 	border-radius: $br;
 	margin: em(40px) auto;
-	@include border($width : em(3px), $color : $accent-color);
+	@include border($width : $element__border-width, $color : $accent-color);
 	@include mq(medium) {
 		
 	}

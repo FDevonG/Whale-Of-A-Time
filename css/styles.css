@@ -372,6 +372,9 @@ COLORS
 BORDER-RADIUS
 *******/
 /*******
+BORDER
+*******/
+/*******
 TRANSITION
 *******/
 /*******
@@ -395,8 +398,7 @@ PLACEHOLDERS
   display: none; }
 
 /* line 14, ../scss/utilities/_placeholders.scss */
-.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .facebook,
-.fb-page, .main-footer {
+.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .facebook, .main-footer {
   text-align: center; }
 
 /* line 18, ../scss/utilities/_placeholders.scss */
@@ -697,7 +699,7 @@ IMAGE-GALLERY
   max-width: 45em;
   display: inline-block;
   margin: 0 auto;
-  border: 0.1875em solid #0395A5;
+  border: 3px solid #0395A5;
   border-radius: 5px; }
 
 /* line 17, ../scss/components/_image-gallery.scss */
@@ -863,9 +865,14 @@ REVIEWS
   /* line 33, ../scss/utilities/_mixins.scss */
   .reviews__list--item {
     padding: 0.9375em 0;
-    margin: 0.625em auto; }
+    margin: 0.625em auto;
+    width: 100%; }
+    /* line 17, ../scss/components/_reviews.scss */
+    .reviews__list--item span {
+      width: 100%;
+      display: inline-block; }
 
-/* line 20, ../scss/components/_reviews.scss */
+/* line 25, ../scss/components/_reviews.scss */
 .review-stars {
   width: 12.5em;
   margin: 0 auto; }
@@ -875,17 +882,17 @@ REVIEWS
     display: grid;
     grid-template-columns: repeat(5, minMax(20%, 1fr)); }
 
-/* line 31, ../scss/components/_reviews.scss */
+/* line 36, ../scss/components/_reviews.scss */
 .review-star {
   width: 1.25em;
   height: 1.25em; }
 
-/* line 36, ../scss/components/_reviews.scss */
+/* line 41, ../scss/components/_reviews.scss */
 .review-star-good {
   fill: #FAC917;
   filter: drop-shadow(0.125em 0.125em 0.03125em #606E7F); }
 
-/* line 41, ../scss/components/_reviews.scss */
+/* line 46, ../scss/components/_reviews.scss */
 .review-star-bad {
   fill: #606E7F; }
 
@@ -899,7 +906,7 @@ SERVICES
   max-width: 400px;
   border-radius: 5px;
   margin: 2.5em auto;
-  border: 0.1875em solid #0395A5; }
+  border: 3px solid #0395A5; }
 
 /* line 17, ../scss/components/_services.scss */
 .feature-service-img {
@@ -1025,9 +1032,10 @@ GOOGLE-MAP
 /***************************
 FACEBOOK-FEED
 ***************************/
-/* line 10, ../scss/components/_facebook-feed.scss */
+/* line 9, ../scss/components/_facebook-feed.scss */
 .fb-page {
-  margin: 2.5em auto 0; }
+  border: 3px solid #0395A5;
+  border-radius: 5px; }
 
 /* line 14, ../scss/components/_facebook-feed.scss */
 .fb-page,

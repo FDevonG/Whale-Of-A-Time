@@ -6,6 +6,11 @@ FACEBOOK-FEED
 	@extend %text-center;
 }
 
+.fb-page {
+	@include border($width : $element__border-width, $color : $accent-color);
+	border-radius: $br;
+}
+
 .fb-page, 
 .fb-page span, 
 .fb-page span iframe[style] { 

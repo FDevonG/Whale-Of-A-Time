@@ -9,7 +9,7 @@ IMAGE-GALLERY
 		max-width: em(720px);
 		display: inline-block;
 		margin: 0 auto;
-		@include border($width : em(3px), $color : $accent-color);
+		@include border($width : $element__border-width, $color : $accent-color);
 		border-radius: $br;
 	}
 }
