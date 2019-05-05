@@ -398,7 +398,7 @@ PLACEHOLDERS
   display: none; }
 
 /* line 14, ../scss/utilities/_placeholders.scss */
-.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .facebook, .main-footer {
+.center-text, .email-response-div, .intro, #image-gallery, .modal-content, .review-stars__list, .service-image-conatiner, .local-attractions__list--item, .local-event-link-container, .main-footer {
   text-align: center; }
 
 /* line 18, ../scss/utilities/_placeholders.scss */
@@ -497,37 +497,35 @@ LOCAL ATTRACTIONS
   margin: 0.3125em 0;
   font-size: 0.875em; }
 /* line 115, ../scss/components/_typography.scss */
-.local-attraction-links-container span,
-.local-event-link-container span {
-  color: #061A26; }
-/* line 118, ../scss/components/_typography.scss */
 .local-attraction-links-container a,
-.local-event-link-container a {
+.local-attraction-links-container span,
+.local-event-link-container a,
+.local-event-link-container span {
   color: #0395A5; }
 
 /**********
 EMAIL-FORM
 **********/
-/* line 127, ../scss/components/_typography.scss */
+/* line 125, ../scss/components/_typography.scss */
 .email-form {
   font-size: 0.875em; }
 
-/* line 131, ../scss/components/_typography.scss */
+/* line 129, ../scss/components/_typography.scss */
 .email-response-div {
   font-size: 0.875em; }
 
 /**********
 FOOTER
 **********/
-/* line 140, ../scss/components/_typography.scss */
+/* line 138, ../scss/components/_typography.scss */
 .footer-text {
   font-size: 0.875em; }
 
-/* line 144, ../scss/components/_typography.scss */
+/* line 142, ../scss/components/_typography.scss */
 .footer-tel {
   color: #0395A5; }
 
-/* line 148, ../scss/components/_typography.scss */
+/* line 146, ../scss/components/_typography.scss */
 .site-author {
   font-size: 0.625em;
   color: #061A26; }
@@ -714,26 +712,26 @@ IMAGE-GALLERY
   border-radius: 50%;
   transition: fill 0.5s, transform 0.5s, filter 0.5s; }
   /* line 29, ../scss/components/_image-gallery.scss */
-  .arrow:hover, .arrow:active, .arrow:focus {
+  .arrow:hover, .arrow:active {
     fill: #0395A5;
     transform: scale(1.5); }
 
-/* line 38, ../scss/components/_image-gallery.scss */
-.back-arrow:hover, .back-arrow:active, .back-arrow:focus {
+/* line 37, ../scss/components/_image-gallery.scss */
+.back-arrow:hover, .back-arrow:active {
   filter: drop-shadow(0.1875em 0.1875em 0.0625em #606E7F); }
 
-/* line 46, ../scss/components/_image-gallery.scss */
-.next-arrow:hover, .next-arrow:active, .next-arrow:focus {
+/* line 44, ../scss/components/_image-gallery.scss */
+.next-arrow:hover, .next-arrow:active {
   filter: drop-shadow(-0.1875em 0.1875em 0.0625em #606E7F); }
 
-/* line 54, ../scss/components/_image-gallery.scss */
+/* line 51, ../scss/components/_image-gallery.scss */
 .imageGalleryImageSelectorContainer {
   display: flex;
   width: 80%;
   max-width: 600px;
   margin: 0.625em auto; }
 
-/* line 61, ../scss/components/_image-gallery.scss */
+/* line 58, ../scss/components/_image-gallery.scss */
 .imageGalleryImageSelector {
   border-radius: 50%;
   background-color: #07598C;
@@ -742,19 +740,18 @@ IMAGE-GALLERY
   margin: 0.15625em auto 0;
   transition: background 0.5s, transform 0.5s, filter 0.5s;
   filter: drop-shadow(0em 0em #606E7F); }
-  /* line 70, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:hover, .imageGalleryImageSelector:active
-  .imageGalleryImageSelector:focus {
+  /* line 67, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:hover, .imageGalleryImageSelector:active {
     background-color: #0395A5;
     transform: scale(1.3); }
-  /* line 78, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:nth-child(-n+5):hover, .imageGalleryImageSelector:nth-child(-n+5):active, .imageGalleryImageSelector:nth-child(-n+5):focus {
+  /* line 74, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:nth-child(-n+5):hover, .imageGalleryImageSelector:nth-child(-n+5):active {
     filter: drop-shadow(0.3125em 0.3125em 0.125em #606E7F); }
-  /* line 85, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:nth-child(n+6):hover, .imageGalleryImageSelector:nth-child(n+6):active, .imageGalleryImageSelector:nth-child(n+6):focus {
+  /* line 80, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:nth-child(n+6):hover, .imageGalleryImageSelector:nth-child(n+6):active {
     filter: drop-shadow(-0.3125em 0.3125em 0.125em #606E7F); }
 
-/* line 93, ../scss/components/_image-gallery.scss */
+/* line 87, ../scss/components/_image-gallery.scss */
 .currentGalleryImage {
   background-color: #0395A5; }
 
@@ -838,16 +835,16 @@ MODAL
   flex-shrink: 0;
   flex-basis: 50%; }
   /* line 80, ../scss/components/_modal.scss */
-  .modal-arrow:hover, .modal-arrow:active, .modal-arrow:focus {
+  .modal-arrow:hover, .modal-arrow:active {
     fill: #0395A5;
     transform: scale(1.3); }
 
-/* line 89, ../scss/components/_modal.scss */
-.modal-back-arrow:hover, .modal-back-arrow:active, .modal-back-arrow:focus {
+/* line 88, ../scss/components/_modal.scss */
+.modal-back-arrow:hover, .modal-back-arrow:active {
   filter: drop-shadow(0.3125em 0.3125em 0.125em #606E7F); }
 
-/* line 97, ../scss/components/_modal.scss */
-.modal-next-arrow:hover, .modal-next-arrow:active, .modal-next-arrow:focus {
+/* line 95, ../scss/components/_modal.scss */
+.modal-next-arrow:hover, .modal-next-arrow:active {
   filter: drop-shadow(-0.3125em 0.3125em 0.125em #606E7F); }
 
 /***************************
@@ -991,8 +988,8 @@ EMAIL-FORM
   outline: none;
   transition: background-color 0.5s, box-shadow 0.5s;
   border: none; }
-  /* line 48, ../scss/components/_email-form.scss */
-  .form-button:hover, .form-button:active {
+  /* line 47, ../scss/components/_email-form.scss */
+  .form-button:hover, .form-button:focus, .form-button:active {
     background-color: #07598C;
     box-shadow: 0.3125em 0.3125em 0.1875em #606E7F; }
 
@@ -1011,12 +1008,10 @@ input,
 textarea {
   transition: box-shadow 0.5s; }
   /* line 69, ../scss/components/_email-form.scss */
-  .email-response-div:hover, .email-response-div:active, .email-response-div:focus,
+  .email-response-div:hover, .email-response-div:focus,
   input:hover,
-  input:active,
   input:focus,
   textarea:hover,
-  textarea:active,
   textarea:focus {
     box-shadow: 0.3125em 0.3125em 0.1875em #606E7F; }
 
@@ -1032,12 +1027,14 @@ GOOGLE-MAP
 /***************************
 FACEBOOK-FEED
 ***************************/
-/* line 9, ../scss/components/_facebook-feed.scss */
-.fb-page {
+/* line 5, ../scss/components/_facebook-feed.scss */
+.facebook {
+  max-width: 31.25em;
+  margin: 0 auto;
   border: 3px solid #0395A5;
   border-radius: 5px; }
 
-/* line 14, ../scss/components/_facebook-feed.scss */
+/* line 16, ../scss/components/_facebook-feed.scss */
 .fb-page,
 .fb-page span,
 .fb-page span iframe[style] {

@@ -3,12 +3,14 @@ FACEBOOK-FEED
 ***************************/
 
 .facebook {
-	@extend %text-center;
+	max-width: em(500px);
+	margin: 0 auto;
+	@include border($width : $element__border-width, $color : $accent-color);
+	border-radius: $br;
 }
 
 .fb-page {
-	@include border($width : $element__border-width, $color : $accent-color);
-	border-radius: $br;
+	
 }
 
 .fb-page, 
@@ -17,6 +19,3 @@ FACEBOOK-FEED
     width: 100% !important; 
 	max-width: em(500px);
 }
-
-
-

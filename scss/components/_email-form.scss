@@ -38,7 +38,6 @@ EMAIL-FORM
 	height : em(40px);
 	background-color: $accent-color;
 	width: 100%;
-//	display: inline-block;
 	border-radius: $br;
 	margin: em(10px) 0;
 	@extend %pointer;
@@ -46,6 +45,7 @@ EMAIL-FORM
 	transition: background-color $default__transition-time, box-shadow $default__transition-time;
 	border: none;
 	&:hover,
+	&:focus,
 	&:active {
 		background-color: $primary-color;
 		box-shadow: em(5px) em(5px) em(3px) $grey;
@@ -67,7 +67,6 @@ input,
 textarea {
 	transition: box-shadow $default__transition-time;
 	&:hover,
-	&:active,
 	&:focus {
 		box-shadow: em(5px) em(5px) em(3px) $grey;
 	}

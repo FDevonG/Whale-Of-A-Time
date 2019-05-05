@@ -112,10 +112,8 @@ LOCAL ATTRACTIONS
 		margin: em(5px) 0;
 		font-size: em(14px);
 	}
+	a,
 	span {
-		color: $black;
-	}
-	a {
 		color: $accent-color;
 	}
 }
