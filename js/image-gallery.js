@@ -43,7 +43,7 @@ const imageDescriptions = [
 	'Spacious and well maintained camp sites at Whale Of A Time Camping and Cottages.',
 	'Rainbow over top of Bay of Fundy.',
 	'Father and son, enjoying a hike through one of the many trails on Long Island Nova Scotia.',
-	'We are pet friendly here at Whale Of A Time.',
+	'We are pet friendly at Whale Of A Time.',
 ];
 
 buildControls();//call the function to build out the image gallery controls
