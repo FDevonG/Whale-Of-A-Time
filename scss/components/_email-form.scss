@@ -53,7 +53,7 @@ EMAIL-FORM
 }
 
 .email-response-div {
-	margin-bottom: em(20px);
+	margin: 0 auto em(20px);
 	@include border($width : em(2px), $color : $accent-color);
 	border-radius: $br;
 	padding: em(20px) 0;

@@ -995,7 +995,7 @@ EMAIL-FORM
 
 /* line 55, ../scss/components/_email-form.scss */
 .email-response-div {
-  margin-bottom: 1.25em;
+  margin: 0 auto 1.25em;
   border: 0.125em solid #0395A5;
   border-radius: 5px;
   padding: 1.25em 0;
