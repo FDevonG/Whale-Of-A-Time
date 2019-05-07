@@ -26,23 +26,20 @@ IMAGE-GALLERY
 	border-radius: $br-round;
 	transition: fill $default__transition-time, transform $default__transition-time, filter $default__transition-time;
 	@extend %pointer;
-	&:hover,
-	&:active {
+	&:hover {
 		fill: $accent-color;
 		transform: scale(1.5);
 	}
 }
 
 .back-arrow {
-	&:hover,
-	&:active {
+	&:hover {
 		filter: drop-shadow(em(3px) em(3px) em(1px) $grey);
 	}
 }
 
 .next-arrow {
-	&:hover,
-	&:active {
+	&:hover {
 		filter: drop-shadow(em(-3px) em(3px) em(1px) $grey);
 	}
 }
@@ -64,21 +61,18 @@ IMAGE-GALLERY
 	@extend %pointer;
 	transition: background $default__transition-time, transform $default__transition-time, filter $default__transition-time;
 	filter: drop-shadow(em(0px) em(0px) $grey);
-	&:hover,
-	&:active {
+	&:hover {
 		background-color: $accent-color;
 		transform: scale(1.3);
 //		filter: drop-shadow(em(5px) em(5px) em(2px) $grey);
 	}
 	&:nth-child(-n+5) {
-		&:hover,
-		&:active {
+		&:hover {
 			filter: drop-shadow(em(5px) em(5px) em(2px) $grey);
 		}
 	}
 	&:nth-child(n+6) {
-		&:hover,
-		&:active {
+		&:hover {
 			filter: drop-shadow(em(-5px) em(5px) em(2px) $grey);
 		}
 	}
