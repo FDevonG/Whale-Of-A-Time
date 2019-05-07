@@ -712,26 +712,26 @@ IMAGE-GALLERY
   border-radius: 50%;
   transition: fill 0.5s, transform 0.5s, filter 0.5s; }
   /* line 29, ../scss/components/_image-gallery.scss */
-  .arrow:hover, .arrow:active {
+  .arrow:hover {
     fill: #0395A5;
     transform: scale(1.5); }
 
-/* line 37, ../scss/components/_image-gallery.scss */
-.back-arrow:hover, .back-arrow:active {
+/* line 36, ../scss/components/_image-gallery.scss */
+.back-arrow:hover {
   filter: drop-shadow(0.1875em 0.1875em 0.0625em #606E7F); }
 
-/* line 44, ../scss/components/_image-gallery.scss */
-.next-arrow:hover, .next-arrow:active {
+/* line 42, ../scss/components/_image-gallery.scss */
+.next-arrow:hover {
   filter: drop-shadow(-0.1875em 0.1875em 0.0625em #606E7F); }
 
-/* line 51, ../scss/components/_image-gallery.scss */
+/* line 48, ../scss/components/_image-gallery.scss */
 .imageGalleryImageSelectorContainer {
   display: flex;
   width: 80%;
   max-width: 600px;
   margin: 0.625em auto; }
 
-/* line 58, ../scss/components/_image-gallery.scss */
+/* line 55, ../scss/components/_image-gallery.scss */
 .imageGalleryImageSelector {
   border-radius: 50%;
   background-color: #07598C;
@@ -740,18 +740,18 @@ IMAGE-GALLERY
   margin: 0.15625em auto 0;
   transition: background 0.5s, transform 0.5s, filter 0.5s;
   filter: drop-shadow(0em 0em #606E7F); }
-  /* line 67, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:hover, .imageGalleryImageSelector:active {
+  /* line 64, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:hover {
     background-color: #0395A5;
     transform: scale(1.3); }
-  /* line 74, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:nth-child(-n+5):hover, .imageGalleryImageSelector:nth-child(-n+5):active {
+  /* line 70, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:nth-child(-n+5):hover {
     filter: drop-shadow(0.3125em 0.3125em 0.125em #606E7F); }
-  /* line 80, ../scss/components/_image-gallery.scss */
-  .imageGalleryImageSelector:nth-child(n+6):hover, .imageGalleryImageSelector:nth-child(n+6):active {
+  /* line 75, ../scss/components/_image-gallery.scss */
+  .imageGalleryImageSelector:nth-child(n+6):hover {
     filter: drop-shadow(-0.3125em 0.3125em 0.125em #606E7F); }
 
-/* line 87, ../scss/components/_image-gallery.scss */
+/* line 81, ../scss/components/_image-gallery.scss */
 .currentGalleryImage {
   background-color: #0395A5; }
 
@@ -802,29 +802,29 @@ MODAL
   right: 0;
   transition: color 0.5s, transform 0.5s, filter 0.5s; }
   /* line 44, ../scss/components/_modal.scss */
-  .modal-close:hover, .modal-close:focus, .modal-close:active {
+  .modal-close:hover {
     color: #0395A5;
     transform: scale(1.3);
     filter: drop-shadow(0.125em 0.125em 0.03125em #606E7F); }
 
-/* line 54, ../scss/components/_modal.scss */
+/* line 52, ../scss/components/_modal.scss */
 .modal-image {
   width: 100%;
   max-width: 45em;
   display: block; }
 
-/* line 61, ../scss/components/_modal.scss */
+/* line 59, ../scss/components/_modal.scss */
 .modal-text {
   display: block;
   margin-top: 0.625em; }
 
-/* line 67, ../scss/components/_modal.scss */
+/* line 65, ../scss/components/_modal.scss */
 .modal-controls-container {
   display: flex;
   flex-direction: row;
   justify-content: center; }
 
-/* line 72, ../scss/components/_modal.scss */
+/* line 70, ../scss/components/_modal.scss */
 .modal-arrow {
   width: 1.5625em;
   height: 1.5625em;
@@ -834,17 +834,17 @@ MODAL
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 50%; }
-  /* line 80, ../scss/components/_modal.scss */
-  .modal-arrow:hover, .modal-arrow:active {
+  /* line 78, ../scss/components/_modal.scss */
+  .modal-arrow:hover {
     fill: #0395A5;
     transform: scale(1.3); }
 
-/* line 88, ../scss/components/_modal.scss */
-.modal-back-arrow:hover, .modal-back-arrow:active {
+/* line 85, ../scss/components/_modal.scss */
+.modal-back-arrow:hover {
   filter: drop-shadow(0.3125em 0.3125em 0.125em #606E7F); }
 
-/* line 95, ../scss/components/_modal.scss */
-.modal-next-arrow:hover, .modal-next-arrow:active {
+/* line 91, ../scss/components/_modal.scss */
+.modal-next-arrow:hover {
   filter: drop-shadow(-0.3125em 0.3125em 0.125em #606E7F); }
 
 /***************************

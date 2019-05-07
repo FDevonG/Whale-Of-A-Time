@@ -41,9 +41,7 @@ MODAL
 	right: 0;
 	transition: color $default__transition-time, transform $default__transition-time, filter $default__transition-time;
 	@extend %pointer;
-	&:hover,
-	&:focus,
-	&:active {
+	&:hover {
 		color: $accent-color;
 		transform: scale(1.3);
 		filter: drop-shadow(em(2px) em(2px) em(0.5px) $grey)
@@ -77,23 +75,20 @@ MODAL
 	transition: fill $default__transition-time, transform $default__transition-time, filter $default__transition-time;
 	@include flex($basis : 50%);
 	@extend %pointer;
-	&:hover,
-	&:active {
+	&:hover{
 		fill: $accent-color;
 		transform: scale(1.3);
 	}
 }
 
 .modal-back-arrow {
-	&:hover,
-	&:active {
+	&:hover {
 		filter: drop-shadow(em(5px) em(5px) em(2px) $grey);
 	}
 }
 
 .modal-next-arrow {
-	&:hover,
-	&:active {
+	&:hover {
 		filter: drop-shadow(em(-5px) em(5px) em(2px) $grey);
 	}
 }
