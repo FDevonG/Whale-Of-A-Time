@@ -1,12 +1,12 @@
 <!doctype html>
 <html><head>
 		<meta charset="UTF-8">
-		<title>Whale Of a Time Camping | Local Attractions</title>
+		<title>Whale Of a Time Camping | Contact</title>
 		<meta name="author" content="Devon Gillis Web Development">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="Description" content="A family/pet friendly water view campground in the heart of Freeport, Long Island, Nova Scotia. Featuring stunning views of the Bay of Fundy and Freeport.">
 		<meta name="robots" content="index, follow">
-		
+	
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,7 +33,7 @@
 							<li class="main-nav__list--item">
 								<a href="services.html">Services</a>
 							</li>
-							<li class="main-nav__list--item current-page">
+							<li class="main-nav__list--item">
 								<a href="activities.html">Activities</a>
 							</li>
 <!--
@@ -41,7 +41,7 @@
 								<a href="register.html">Register</a>
 							</li>
 -->
-							<li class="main-nav__list--item">
+							<li class="main-nav__list--item current-page">
 								<a href="contact.html">Contact</a>
 							</li>
 						</ul>
@@ -64,7 +64,7 @@
 									</svg>
 								</a>
 							</li>
-							<li class="mobile-nav__list--item current-page-icon">
+							<li class="mobile-nav__list--item">
 								<a href="activities.html">
 									<svg viewBox="-40 0 480 480" xmlns="http://www.w3.org/2000/svg" class="nav-icon">
 										<path d="M344 160h-72v16h80a8 8 0 0 0 8-8V48a8 8 0 0 0-8-8h-88v16h80zm0 0M272 192h88v16h-88zm0 0M272 224h88v16h-88zm0 0M352 256h-80v16h72v16h-72v16h80a8 8 0 0 0 8-8v-32a8 8 0 0 0-8-8zm0 0M272 320h48v16h-48zm0 0M336 320h24v16h-24zm0 0M272 352h88v16h-88zm0 0"/>
@@ -83,7 +83,7 @@
 								</a>
 							</li>
 -->
-							<li class="mobile-nav__list--item">
+							<li class="mobile-nav__list--item current-page-icon">
 								<a href="contact.html">
 									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.012 31.012" class="nav-icon">
 										<path d="M25.109 21.51a.495.495 0 0 1-.342-.136l-5.754-5.398a.5.5 0 1 1 .685-.728l5.754 5.398a.5.5 0 0 1-.343.864zM5.902 21.51a.5.5 0 0 1-.343-.864l5.756-5.398a.5.5 0 0 1 .685.728l-5.756 5.398a.495.495 0 0 1-.342.136z"/>
@@ -98,65 +98,33 @@
 
 				<main class="main-section">
 					
-					<div class="card">
+					<div class="center-text">
+						<h3 class="section-heading">Get in touch!</h3>
+					</div>
+
+					<div class="card email-form">
 						
-						<div class="center-text">
-							<h3 class="section-heading">Local Attractions</h3>
-						</div>
-						
-						<div class="local-attractions">
-							<ul class="local-attractions__list">
-								<li class="local-attractions__list--item">
-									<h4>Restaurants</h4>
-									<div class="local-attraction-links-container">
-										<a href="https://schoolstreetmarket.wixsite.com/home" target="_blank">School Street Market</a>
-										<a href="https://www.facebook.com/pages/category/Restaurant/Fair-Winds-Cafe-638358469942372/" target="_blank">Fair Winds Cafe</a>
-										<a href="https://www.google.com/maps/place/Petit+Passage+Caf%C3%A9/@44.3970544,-66.2038513,15z/data=!4m5!3m4!1s0x0:0xd8935e4543fa8609!8m2!3d44.3970544!4d-66.2038513" target="_blank">Petit Passage Café</a>
-										<a href="https://www.google.com/maps/place/Just+Above+Water+Cafe/@44.3958897,-66.2141678,15z/data=!4m5!3m4!1s0x0:0xafcadd2132995a9a!8m2!3d44.3958897!4d-66.2141678" target="_blank">Just Above Water Cafe</a>
-									</div>
-								</li>
-								<li class="local-attractions__list--item">
-									<h4>Whale Watching</h4>
-									<div class="local-attraction-links-container">
-										<a href="http://whalewatchersnovascotia.ca/" target="_blank">Freeport Whale &amp; Seabird Tours</a>
-										<a href="https://www.novascotiawhalewatching.ca/" target="_blank">Mariner Cruises Whale and Seabird Tours</a>
-										<a href="http://www.oceanexplorations.ca/" target="_blank">Ocean Explorations</a>
-										<a href="https://ppww.ca/" target="_blank">Petit Passage Whale Watch</a>
-										<a href="https://brierislandwhalewatch.com/" target="_blank">Brier Island Whale and Seabird Cruises</a>
-									</div>
-								</li>
-								<li class="local-attractions__list--item">
-									<h4>Hiking</h4>
-									<div class="local-attraction-links-container">
-										<a href="https://www.novascotia.com/see-do/attractions/balancing-rock/2582" target="_blank">Balancing Rock</a>
-										<span>Fundy Trail</span>
-									</div>
-								</li>
-								<li class="local-attractions__list--item">
-									<h4>Art Gallery</h4>
-									<div class="local-attraction-links-container">
-										<a href="https://www.facebook.com/gallery217freeport/" target="_blank">Gallery 217</a>
-									</div>
-								</li>
-							</ul>
-						</div>
+						<form action="../php/mailer.php" method="POST" id="email-form">
+							<div class="center-text">
+								<span>Send us an email to book now!</span>
+							</div>
+							<input type="text" id="name-input" name="name" placeholder="Name" required>
+							<input type="text" id="email-input" name="email" placeholder="Email" required>
+							<input type="text" id="subject-input" name="subject" placeholder="Subject" required>
+							<textarea id="message-input" name="message" placeholder="Message" required></textarea>
+							<div id="email-button-container">
+								<button type="submit" id="email-submit" class="form-button">Send</button>
+								<button type="reset" id="email-reset" class="form-button">Reset</button>
+							</div>
+							
+						</form>
 						
 					</div>
 					
 					<div class="card">
-					
-						<div class="center-text">
-							<h3 class="section-heading">Local Events</h3>
-						</div>
 						
-						<div class="local-event-link-container">
-							
-							<a href="http://www.breakingwavesfestival.ca/" target="_blank">Breaking Waves Festival</a>
-							<a href="http://lobsterbash.blogspot.com/" target="_blank">Lobster Bash</a>
-							<a href="http://digbyscallopdays.ca/" target="_blank">Digby Scallop Days</a>
-							<a href="http://www.wharfratrally.com/" target="_blank">Wharf Rat Rally</a>
-							
-						</div>
+						<iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.5437391174837!2d-66.32589498366336!3d44.27820547910494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ca9cd0295baa1ab%3A0x876931021a59c674!2sWhale+of+a+Time+Camping!5e0!3m2!1sen!2sca!4v1556708064132!5m2!1sen!2sca" allowfullscreen>
+						</iframe>
 						
 					</div>
 					
@@ -190,6 +158,7 @@
 			
 		</div>
 		<script src="../js/generalScript.js"></script>
+		<script src="../js/mailer.js"></script>
 	</body>
 	
 </html>
